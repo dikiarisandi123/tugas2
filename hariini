@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+
+# Data contoh
+hari = ['H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'H7', 'H8', 'H9', 'H10']
+jumlah_penjualan = [50, 30, 70, 45, 90, 55, 65, 75, 35, 80]
+
+# grafiknya
+plt.figure(figsize=(8, 4))
+plt.plot(hari, jumlah_penjualan, marker='*', color='g', linestyle='-')
+plt.title('Line Chart Penjualan per hari')
+plt.xlabel('hari')
+plt.ylabel('Jumlah Penjualan')
+plt.grid(True)
+plt.show()
